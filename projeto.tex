@@ -1,0 +1,62 @@
+% chktex-file 8
+\documentclass[12pt]{article}
+
+\usepackage{styles/sbc-template}
+\usepackage{graphicx,url}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+
+\graphicspath{{images/}}
+     
+\sloppy
+
+\title{Projeto de pesquisa}
+
+\author{
+	Chico\inst{1},
+	Juan Marcos Braga Faria\inst{1},
+	Lucas Almeida Santos de Souza\inst{1},
+	Pep\inst{1}
+}
+
+\address{
+	Departamento de Ciência da Computação\\
+	Universidade Federal de Minas Gerais (UFMG) -- Belo Horizonte, MG -- Brasil
+	\email{\{chico,juanmarcos,lucasalmeida,pep\}@dcc.ufmg.br}
+}
+
+\begin{document} 
+
+\maketitle
+
+\begin{abstract}
+	Abstract vai aqui~\cite{cormen:2009} % aqui só pra não dar erro, remover depois
+\end{abstract}
+     
+\begin{resumo}
+	O objetivo deste trabalho é desenvolver a habilidade de escrever um projeto de pesquisa científica na área de heurísticas para problemas de otimização. O trabalho será avaliado pela sua clareza e completude, ou seja, ele deve descrever precisamente qual é o problema que será abordado, (ii) quais serão exatamente as hipóteses investigadas, e (iii) quais os experimentos que serão realizados para verificar estas hipóteses. 
+
+	Um exemplo de uma pesquisa muito comum nesta área é a proposta de uma nova heurística para um problema NP-Difícil. Sendo assim, a hipótese investigada é se esta heurística obtém resultados competitivos com as melhores heurísticas já descobertas para este problema. Recomenda-se que o aluno faça uma pesquisa com este formato, mas ele está livre para propor uma pesquisa em outro formato. O aluno pode trabalhar com qualquer problema NP-Difícil, exceto aquele abordado no trabalho de implementação. 
+
+	Para facilitar a escrita e a correção deste projeto, ele deverá ter exatamente a seguinte estrutura de seções, onde cada subtópico é composto de preferencialmente (mas não obrigatoriamente) um parágrafo. 
+\end{resumo}
+
+\input{sections/1-introducao.tex}
+
+\input{sections/2-trabalhosRelacionados.tex}
+
+\input{sections/3-metodologia.tex}
+
+\input{sections/4-cronograma.tex}
+
+\input{sections/5-equipe.tex}
+
+\input{sections/6-consideracoesFinais.tex}
+
+\bibliographystyle{styles/sbc}
+\bibliography{projeto}
+% bibliografias:
+% Todas as que são citadas no projeto.
+% Completas e padronizadas (no formato da SBC)
+
+\end{document}
